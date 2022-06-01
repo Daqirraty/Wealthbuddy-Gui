@@ -1,0 +1,2 @@
+# Wealthbuddy-Gui
+Wealthbuddy frontend
