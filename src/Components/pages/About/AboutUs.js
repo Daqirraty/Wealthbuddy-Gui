@@ -18,16 +18,14 @@ const AboutUs = () =>{
     return(
         <Container>
             
-                <div className=" flex flex-wrap p-[5rem] ">
-                    <div className=" w-1/2 px-8 pb-10 "><img src={Rectangle57} alt="Rectangle57"className="w-[615px] drop-shadow-2xl  -mt-10 ml-10  rounded-lg bg-slate-200 hover:border-2 border-cyan-300 hover:rounded-lg"/></div>
-                    <div className="w-1/4 px-10 ">
+                <div className=" flex flex">
+                    <div className=" w-[615px] h-[683px] px-8 pb-10 "><img src={Rectangle57} alt="Rectangle57"className="drop-shadow-2xl -mt-10 ml-10 rounded-[2.5rem] bg-slate-200 hover:border-2 border-cyan-300 hover:rounded-[2.9rem]"/></div>
+                    <div className="w-[340px] px-10 ">
                         <img src={Aboutthejob} className="pt-[12rem]" alt="Aboutthejob" />
                     </div>
-                    <div className="ml-[7.88rem]"><img src={Vector2} className="" alt="Vector2"/></div>
-                    
-                    <img src={Vector} className="-mt-[10rem] mr-[5rem]"  alt="Vector" />
+                    <div className="ml-[15rem]"><img src={Vector2} className="" alt="Vector2"/></div>                    
                 </div>
-
+                <img src={Vector} className="-mt-[15.7rem] ml-[5.4rem]"  alt="Vector" />
                 
 
                 <div className=" container mx-auto p-[5rem] w-[1120px]">
@@ -54,10 +52,10 @@ const AboutUs = () =>{
                 </div>
                
                 <div class=" container mx-auto w-[70rem] pb-8 flex px-[5rem]">
-                    {/* <div className='container mx-auto'><img src={bgshadow}/></div> */}
-                    <div class="flex-1 w-auto mr-9">
+                    <div className='container mx-auto'><img src={bgshadow}/></div>
+                    <div class="flex-1 w-auto mr-9 border">
                         <h1 className='text-[#99BF18] font-bold text-3xl pb-1'>Step1</h1>
-                        <div className='bg-white p-5 border border-white-900 rounded-md w-[500.5px]  drop-shadow-2xl hover:border-cyan-300'>
+                        <div className='bg-white p-5 border border-white-900 rounded-lg w-[500.5px]  drop-shadow-2xl hover:border-cyan-300'>
                             <p>Create a video application (in 60<br/> seconds or less) and post it to your social<br/> media page (Instagram, Facebook,<br/>LinkedIn, TikTok) using the<br/>hashtags #Switchupyourlifestyle and<br/>#NaijasHottestJob.<br/><br/>
                                 In an entertaining and engaging way,<br/>tell us why you’re the best person for the<br/>job and demonstrate your knowledge of<br/>the Wealthbuddy app.<br/><br/>
                                 Don’t forget to tag us in your video.<br/> Our social media handles are at the<br/>bottom of this page.

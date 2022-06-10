@@ -14,7 +14,7 @@ import SeunBabs from '../../../assets/images/SeunBabs.png'
 import JohnsonNnaji from '../../../assets/images/JohnsonNnaji.png'
 
 
-const Ambassadors = () =>{
+const Ambassadors= () =>{
     const AmbassadorCards =[
         {
             id:1,
@@ -85,22 +85,23 @@ const Ambassadors = () =>{
         <Container>
             <img src={bgshadow} className="w-[40%] pr-[10rem] " alt='bgshadow'/>
             <div className='mb-[5rem]'>
-                <img src={Maskgroup} className="w-[950px] -mt-[20rem] ml-[12rem] rounded-[1.5rem]" alt='Maskgroup'/>
+                <img src={Maskgroup} className="w-[1000px] -mt-[20rem] ml-[11rem] rounded-[1.5rem]" alt='Maskgroup'/>
             </div>
 
             <div className='container mx-auto w-[1000px] m-[2rem] m-[5rem]'>
                 <h1 className='mb-5 border-indigo-500'>*Click <b>VIEW</b> to watch uploaded video by choice person</h1>
-                <div className='border  rounded-lg flex flex-rows w-[1000px] h-[58px] mb-5'>
-                    <input type="text" className='w-[850px] h-[40px] p-2 mb-4 text-gray-400 m-2 rounded-lg bg-gray-200 hover:border-2 border-blue-300' placeholder="Enter Name or handle"></input>
+                <div className='border rounded-lg flex flex-rows w-[1000px] h-[58px] mb-5'>
+                    <input type="text" className='w-[850px] h-[40px] p-2 mb-4 text-black m-2 rounded-lg bg-gray-200 hover:border-2 border-blue-300' placeholder="Enter Name or handle"></input>
                     <button className="bg-[#99BF18] w-[150px] h-[56px] text-white font-bold py-2 mb-2 px-4 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end">
                             <span className='mr-2'>SEARCH</span>
                             <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow"/>
                     </button>
                 </div>
             </div>
+
             <img src={bgshadow} className="w-[600px] ml-[46rem] mb-[10rem]" alt="bgshadow"/>
 
-            <div className='container grid grid-cols-2 mx-auto w-[1150px] -mt-[46rem] Justify-center'>
+            <div className='container grid grid-cols-2 mx-auto w-[1150px] mb-10 -mt-[46rem] Justify-center'>
                 {
                     AmbassadorCards.map((AmbassadorCard) =>
                 
@@ -110,7 +111,7 @@ const Ambassadors = () =>{
                         <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
                         <span>{AmbassadorCard.handle}</span>
                     </div>
-                    <div className=' ml-[3rem] Content-end Justify-end'>
+                    <div className=' flex ml-[3rem] Content-end justify-end'>
                         <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                     </div>
                 </div> 

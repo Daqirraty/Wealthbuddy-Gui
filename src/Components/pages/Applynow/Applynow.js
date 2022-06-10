@@ -37,40 +37,40 @@ const ApplyNow = () =>{
                 </h2>
             </div>
             
-            <div className='container flex flex mx-[5rem] '>
-                <div className='ml-5 '>
-                    <div className='container m-5'>
+            <div className='container flex flex mx-[5rem] mt-[3rem] border '>
+                <div className='mt-[9rem]'>
+                    <div className='container'>
                         <label>First Name</label><br/>
-                        <input className="w-[500px] h-[42px] mb-2 text-black  rounded-lg bg-gray-200 hover:border-2 border-blue-400 " placholder="Enter here"></input>
+                        <input className="w-[500px] h-[42px] p-2 mb-2 text-black  rounded-lg bg-gray-200 hover:border-2 border-blue-400 " placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='container m-5'>
+                    <div className='container mt-4'>
                         <label>Surname</label><br/>
-                        <input className='w-[500px] h-[46px] mb-2 text-black  rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
+                        <input className='w-[500px] h-[46px] p-2 mb-2 text-black  rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='container m-5'>
+                    <div className='container mt-4'>
                         <label>City/Town Name</label><br/>
-                        <input className='w-[500px] h-[46px] mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder= "Enter here"></input>
+                        <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder= "Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='container m-5'>
+                    <div className='container mt-4'>
                         <label>State/ Province</label><br/>
-                        <input className='w-[500px] h-[46px] mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
+                        <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='container m-5'>
+                    <div className='container mt-4'>
                         <label>Email address</label>
                         <p className='mb-1'>(Tooltip: Enter the email address you used to sign up for Wealthbuddy)</p>
-                        <input className='w-[500px] h-[46px] mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
+                        <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='container m-5'>
+                    <div className='container mt-4'>
                         <label>Link to your Video</label>
                         <p className='mb-1'>(Tooltip: Enter the link to your 60 seconds video application posted on your<br/>
                                             Instagram, Facebook, Twitter, LinkedIn or TikTok page. It is fine if you have posted on<br/>
                                              multiple platforms. Just enter the video link on your most active account here.)</p>
-                        <input className='w-[500px] h-[46px] mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
+                        <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
                     <div className='m-5'  >

@@ -7,7 +7,7 @@ const TnC =() =>{
         <Container>
             <div className="container  ml-[8rem] mb-[7rem] ">
                 <img src={bgshadow} className="w-[700px] ml-[33rem] pb-10 " alt="bgshadow"/>
-                <img src={TnCimage} alt="TnCimage" className="w-[1040px] -mt-[40rem]  rounded-lg hover:border-2 border-blue-500 hover:rounded-3xl"/>
+                <img src={TnCimage} alt="TnCimage" className="w-[1040px] -mt-[40rem]  rounded-lg hover:border-2 border-blue-300 hover:rounded-[2.1rem]"/>
             </div>
             <div>
                 <span className="bg-[#99BF18] w-[34px] border">33332332</span>
