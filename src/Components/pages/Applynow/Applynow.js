@@ -1,4 +1,6 @@
+import { Link } from 'react-router-dom';
 import Container from '../../../Shared/Container/header'
+import Ellipsearrow from '../../../assets/images/Ellipsearrow.png'
 import guyof from '../../../assets/images/guyof.png';
 import Thankyou from '../../../assets/images/Thankyou.png';
 import ladythumb from '../../../assets/images/ladythumb.png'
@@ -73,27 +75,36 @@ const ApplyNow = () =>{
                         <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                         <hr className='w-[500px]'/>
                     </div>
-                    <div className='m-5'  >
+                    <div className=''  >
                         <p>Are you aware of any circumstances which might adversely<br/> 
                             affect your employment for the period of 3 months in the<br/>
                             position?
                         </p>
-                        <input type ="radio" className=' mb-2 border border-[#99BF18] '></input>
-                        <input type ="radio" className=' mb-2 border border-[#99BF18]'></input>
-
-                        <p>Do you have a criminal record?</p>
-                        <input type ="radio" className=' mb-2 border border-green-200 '></input>
-                        <input type ="radio" className=' mb-2 border border-[#99BF18]'></input><br/>
-
-                        <div className='flex flex mb-[2rem] '>
-                            <input type ="radio" className=''></input>
-                            <p>I agree to the terms & conditions of this application</p>
+                        <div className="my-3">
+                            <input type ="radio" id="radio" name="radio" className='w-[3rem] mb-2 border border-[#99BF18] '></input>
+                            <label>No</label>
+                            <input type ="radio" id="radio" name="radio" className='ml-5 mb-2 border border-[#99BF18]'></input>
+                            <label>Yes</label>
                         </div>
 
-                        <button className="bg-[#99BF18] text-white font-bold py-2 px-4 border-2 mb-[4rem] rounded-lg hover:border-blue-400 inline-flex items-center justify-end">
-                            <span className='mr-2'>SUBMIT </span>
-                            <svg class="bg-[#FCFCFC78] rounded-full w-6 h-6 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 9l3 3m0 0l-3 3m3-3H8m13 0a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                        </button>
+                        <p>Do you have a criminal record?</p>
+                        <div className="my-3">
+                            <input type ="radio" id="radio" name="radio" className='mb-2 border border-[#99BF18] '></input>
+                            <label>No</label>
+                            <input type ="radio" id="radio" name="radio" className='ml-5 mb-2 border border-[#99BF18]'></input>
+                            <label>Yes</label>
+                        </div>
+                        <div className='mb-[2rem] '>
+                            <input type ="radio" id="radio" name="radio" className='bg-[#99BF18]'></input>&nbsp;&nbsp;
+                            <label for="radio">I agree to the terms & conditions of this application</label>
+                        </div>
+
+                        <Link to={`/Modal`}>
+                            <button className="flex flex bg-[#99BF18] w-[224px]  h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center">
+                                <p className='mr-2 text-xl'>SUBMIT</p>&nbsp;
+                                <img src={Ellipsearrow} className="w-[30px] justify-self-end" alt="Ellipsearrow"/>
+                            </button>
+                        </Link>
 
                         
                     </div> 
