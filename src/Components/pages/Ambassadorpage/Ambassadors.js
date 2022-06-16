@@ -14,7 +14,7 @@ import SeunBabs from '../../../assets/images/SeunBabs.png'
 import JohnsonNnaji from '../../../assets/images/JohnsonNnaji.png'
 
 
-const Ambassadors= () =>{
+const ambassadors= () =>{
     const AmbassadorCards =[
         {
             id:1,
@@ -120,4 +120,4 @@ const Ambassadors= () =>{
         </Container>
     )
 }
-export default Ambassadors
+export default ambassadors

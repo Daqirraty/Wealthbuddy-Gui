@@ -6,7 +6,7 @@ import AboutUs from './Components/pages/About/AboutUs'
 import FAQspage from './Components/pages/FAQspage/FAQs';
 import TnC from './Components/pages/TermsandCondPage/TnC';
 import Homepage from './Components/pages/Homepage/home'
-import ApplyNow from './Components/pages/Applynow/Applynow';
+import ApplyNow from './Components/pages/Applynow/applynow';
 import Ambassadors from './Components/pages/Ambassadorpage/Ambassadors';
 import Modal from './ModalpopUP/modal';
 
