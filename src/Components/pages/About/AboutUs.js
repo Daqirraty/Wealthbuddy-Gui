@@ -3,12 +3,12 @@ import Container from '../../../Shared/Container/header'
 import Vector from '../../../assets/images/Vector.png'
 import Vector2 from '../../../assets/images/Vector2.png'
 import Rectangle57 from '../../../assets/images/Rectangle57.png'
-import MainResponsy from '../../../assets/images/MainResponsy.png'
-import Howtoapply from '../../../assets/images/Howtoapply.png'
+// import MainResponsy from '../../../assets/images/MainResponsy.png'
+// import Howtoapply from '../../../assets/images/Howtoapply.png'
 import Aboutthejob from '../../../assets/images/Aboutthejob.png'
 import bgshadow from '../../../assets/images/bgshadow.png'
 import Selection from '../../../assets/images/Selection.png'
-import Employer from '../../../assets/images/Employer.png'
+// import Employer from '../../../assets/images/Employer.png'
 import Ellipsearrow from  '../../../assets/images/Ellipsearrow.png' 
 
 
@@ -17,38 +17,39 @@ import Ellipsearrow from  '../../../assets/images/Ellipsearrow.png'
 const AboutUs = () =>{
     return(
         <Container>
-            
-                <div className=" flex flex">
-                    <div className=" w-[615px] h-[683px] px-8 pb-10 ">
-                        <img src={Rectangle57} alt="Rectangle57"className="drop-shadow-2xl -mt-[5rem] ml-10 rounded-[2.5rem] bg-slate-200 hover:border-2 border-cyan-300 hover:rounded-[2.9rem]"/>
+                <div className="flex my-[4rem]">
+                    <div className="w-[615px] h-[683px] px-8 pb-10">
+                        <img src={Rectangle57} className="w-[50rem] h-[33rem] drop-shadow-2xl ml-[8rem] rounded-[2.5rem] bg-slate-200 hover:border-2 border-cyan-300 hover:rounded-[2.9rem]" alt="Rectangle57"/>
                     </div>
-                    <div className="w-[340px] px-10 ">
+                    <div className="w-[340px] px-10 ml-[11rem] ">
                         <img src={Aboutthejob} className="pt-[12rem]" alt="Aboutthejob" />
                     </div>
-                    <div className="ml-[15rem]"><img src={Vector2} className="" alt="Vector2"/></div>                    
+                    <div className="ml-[16.3rem]"><img src={Vector2} className="w-[170px]" alt="Vector2"/></div>                    
                 </div>
-                <img src={Vector} className="-mt-[15.7rem] ml-[5.4rem]" alt="Vector" />
+                <img src={Vector} className="-mt-[23rem] ml-[5.4rem]" alt="Vector" />
                 
 
-                <div className=" container w-[60rem] ml-[5rem] border mt-5 text-xl">
-                    <div className="w-[20rem] h-[4rem] pt-3 text-white text-center border border-4 font-bold bg-[#99BF18] rounded-[1.2rem]">MAIN RESPONSIBILITIES</div>
+                <div className="container w-[70rem] ml-[5rem] mt-[4rem] text-xl">
+                    <div className="w-[20rem] h-[4rem] pt-3 text-white text-center border-4 font-bold bg-[#99BF18] rounded-[1.2rem]">MAIN RESPONSIBILITIES</div>
                     {/* <img src={MainResponsy} className="w-[230px]" alt="MainResponsy" /> */}
                 <br/>
-                    <p className="fontSize-[30rem] fontFamily-Montserrat leading-loose text-xm">
+                    <p className="leading-loose tracking-widest text-xm">
                         Employment responsibilities will include the following:<br/>
-                        1. Providing weekly updates via social media/blog.<br/>
-                        2. Represent Wealthbuddy by Meristem at various functions.<br/>
-                        3. Be a true Wealthbuddy ‘Ambassador’ and participate in media interviews<br/>as required.
-                        4. Act responsibly always and in accordance with the reasonable directions of<br/> Wealthbuddy Management.
                     </p>
+                        <ol className="tracking-widest">
+                            <li className="p-2">1. Providing weekly updates via social media/blog.<br/></li>
+                            <li className="p-2">2. Represent Wealthbuddy by Meristem at various functions.<br/></li>
+                            <li className="p-2">3. Be a true Wealthbuddy ‘Ambassador’ and participate in media interviews<br/>as required.<br/></li>
+                            <li className="p-2">4. Act responsibly always and in accordance with the reasonable directions of<br/> Wealthbuddy Management.</li>
+                        </ol>
                 </div>
 
-                <div className="container ml-[5rem] w-[70rem] border mt-5">
-                <div className="w-[15rem] h-[4rem] pt-3 text-white text-center border-[#99BF18] font-bold text-xl bg-[#99BF18] border-4 rounded-[1.2rem]">HOW TO APPLY</div>
+                <div className="container ml-[5rem] w-[70rem] my-[3rem]">
+                <div className="w-[15rem] h-[3.8rem] pt-3 text-white text-center border-4 font-bold text-xl bg-[#99BF18] rounded-[1.2rem]">HOW TO APPLY</div>
                     {/* <img src={Howtoapply} className="w-[180px]" alt="Howtoapply" /><br/> */}
                     <div>
-                        <h1 className="fontFamily-Montserrat leading-normal font-bold text-3xl">Want Naija’s hottest job? </h1>
-                        <p className=" fontFamily-Montserrat leading-normal text-xl">
+                        <h1 className="leading-normal font-bold text-3xl my-2">Want Naija’s hottest job? </h1>
+                        <p className="leading-loose tracking-widest text-xl">
                             If you enjoy connecting and engaging with new people on digital platforms<br/>
                             and you can spare 3 months to help people grow their money, you already<br/>
                             stand a good chance. It’s easy to apply.
@@ -56,32 +57,32 @@ const AboutUs = () =>{
                     </div> 
                 </div>
                
-                <div className="ml-[25rem] w-[35rem] border"><img src={bgshadow} className="w-[35rem]" alt="bgshadow"/></div>
-                <div class=" flex container w-[70rem] pb-8 ">
-                    {/* <div class="flex flex-col m-[5rem] -mt-[35rem] w-auto mr-9 border">
+                <div className="ml-[25rem] w-[35rem]"><img src={bgshadow} className="w-[40rem]" alt="bgshadow"/></div>
+                <div class="flex mx-auto w-[70rem] pb-8">
+                    <div class="flex flex-col m-[5rem] -mt-[35rem] w-auto mr-9">
                         <h1 className="text-[#99BF18] font-bold text-3xl pb-1">Step1</h1>
-                        <div className='bg-white p-5 border border-white-900 rounded-[1.5rem] w-[500.5px]  drop-shadow-2xl hover:border-cyan-300'>
+                        <div className='bg-white p-5 border border-white-900 rounded-[1.5rem] w-[400.5px] h-[433.5px] tracking-widest drop-shadow-2xl hover:border-cyan-300'>
                             <p>Create a video application (in 60<br/> seconds or less) and post it to your social<br/> media page (Instagram, Facebook,<br/>LinkedIn, TikTok) using the<br/>hashtags #Switchupyourlifestyle and<br/>#NaijasHottestJob.<br/><br/>
                                 In an entertaining and engaging way,<br/>tell us why you’re the best person for the<br/>job and demonstrate your knowledge of<br/>the Wealthbuddy app.<br/><br/>
                                 Don’t forget to tag us in your video.<br/> Our social media handles are at the<br/>bottom of this page.
                             </p>
                         </div>
-                    </div> */}
+                    </div>
 
-                    <div className="flex-1 w-auto">
-                        <div className="flex flex-col border">
+                    <div className="flex w-auto ml-[4rem]">
+                        <div className="flex flex-col">
                             <div className="-mt-[35rem]">
                                 <div><h1 className="text-[#99BF18] font-bold text-3xl pb-1">Step2</h1></div>
                                 <div className="bg-white p-3 w-[350px] border border-white-500 rounded-lg drop-shadow-2xl hover:border-cyan-300"><p>If you don’t already have one, open a<br/> Wealthbuddy account. You can do so<br/><a href='#' className='text-[#99BF18]'>here.</a></p></div><br/>
                             </div>
                             <div>
                                 <div><h1 className="text-[#99BF18] font-bold text-3xl pb-1">Step3</h1></div>
-                                <div className="bg-white p-3 mb-4 border w-[350px] rounded-lg drop-shadow-2xl hover:border-cyan-300">
+                                <div className="bg-white p-3 mb-4 border w-[350px] tracking-widest rounded-lg drop-shadow-2xl hover:border-cyan-300">
                                     <p>Fill out a brief application form. That’s it!</p>
                                 </div>
                             </div>
-                            <div className="">
-                                <p className=''>Twenty candidates will be shortlisted.<br/>
+                            <div className="tracking-widest">
+                                <p>Twenty candidates will be shortlisted.<br/>
                                     The top 5 will be selected via a voting process<br/>on our website – so make sure you encourage<br/>
                                     all your friends and family to vote if you get<br/>shortlisted.<br/>
                                     The top 5 will be interviewed and the<br/>successful candidate will be announced.
@@ -92,9 +93,12 @@ const AboutUs = () =>{
                 </div>
 
                 {/* slecton div */}
-                <div className=" container mx-auto w-[80rem] px-[5rem] m-5 mb-5">
-                    <div><img src={Selection} className="w-[200px] m-5 mb-3" alt="Selection" /></div>
-                    <div className="px-6 text-xl">
+                <div className="container mx-auto w-[75rem] mb-5">
+                    <div>
+                    <div className="w-[18rem] h-[4rem] pt-3 mb-2 text-white text-center font-bold text-xl bg-[#99BF18] border-4 rounded-[1.2rem]">SELECTION CRITERIA</div>
+                        {/* <img src={Selection} className="w-[200px] m-5 mb-3" alt="Selection" /> */}
+                    </div>
+                    <div className="text-xl leading-loose">
                         <p>We’re looking for someone with an adventurous attitude,
                         an interesting<br/>personality and good communication skills. Wealthbuddy by Meristem will be<br/>selecting applicants based on:<br/><br/>
                         - Enthusiasm for the role<br/>
@@ -106,7 +110,7 @@ const AboutUs = () =>{
                 {/* Close of selection div */}
 
                 {/* Employer div */}
-                <div className=" container mx-auto border w-[80rem] ml-[5rem] mb-5">
+                <div className="container mx-auto w-[75rem] ml-[5rem] mb-5">
                 <div className="w-[12rem] h-[4rem] pt-3 mb-2 text-white text-center font-bold text-xl bg-[#99BF18] border-4 rounded-[1.2rem]">EMPLOYER</div>
                     {/* <div className="px-5 py-2"><img src={Employer} className="w-[148px]" alt="Employer" /></div> */}
                     <div className="text-xl leading-loose">
@@ -132,9 +136,7 @@ const AboutUs = () =>{
                     </Link>
                 </div>
                 {/* Close of Employer div */}
-
-
-            
+  
         </Container>
     )
 }
