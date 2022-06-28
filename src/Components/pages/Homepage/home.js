@@ -142,7 +142,7 @@ const Homepage = () => {
             </div>
 
 
-            <div className="flex flex-wrap">
+            <div className="flex flex-wrap mb-[5rem]">
                 <div className="container w-1/2 px-20 content-center">
                     <p style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "40px", lineHeight: "" }}>
                         About Wealthbuddy
@@ -164,17 +164,19 @@ const Homepage = () => {
             </div>
 
             {/* BEGIN feature div after the sliding cards */}
-            <div className="flex border justify-around mb-2">
-                <div className="flex items-center mx-5 border">
-                    <p className="text-2xl font-bold">Featured Applicants</p>
-                </div>
-                <div className="flex border">
-                    <Link to={`/Ambassadors`} >
-                        <button className="flex justify-between items-center bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
-                            <div className=""><p className='mr-2 text-xl'>VIEW ALL</p></div>
-                            <div className=""><img src={Ellipsearrow} className=" w-[30px]" alt="Ellipsearrow" /></div>
-                        </button>
-                    </Link>
+            <div className="flex mb-4">
+                <div className='flex justify-between w-[75rem] mx-auto'>
+                    <div className="flex items-center mx-5 ">
+                        <p className="text-2xl font-bold">Featured Applicants</p>
+                    </div>
+                    <div className="flex ">
+                        <Link to={`/Ambassadors`} >
+                            <button className="flex justify-between items-center bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
+                                <div className=""><p className='mr-2 text-xl'>VIEW ALL</p></div>
+                                <div className=""><img src={Ellipsearrow} className=" w-[30px]" alt="Ellipsearrow" /></div>
+                            </button>
+                        </Link>
+                    </div>
                 </div>
             </div>
             {/* End feature div after the sliding cards */}
