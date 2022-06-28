@@ -58,8 +58,8 @@ const AboutUs = () =>{
                 </div>
                
                 <div className="ml-[25rem] w-[35rem]"><img src={bgshadow} className="w-[40rem]" alt="bgshadow"/></div>
-                <div class="flex mx-auto w-[70rem] pb-8">
-                    <div class="flex flex-col m-[5rem] -mt-[35rem] w-auto mr-9">
+                <div className="flex mx-auto w-[70rem] pb-8">
+                    <div className="flex flex-col m-[5rem] -mt-[35rem] w-auto mr-9">
                         <h1 className="text-[#99BF18] font-bold text-3xl pb-1">Step1</h1>
                         <div className='bg-white p-5 border border-white-900 rounded-[1.5rem] w-[400.5px] h-[433.5px] tracking-widest drop-shadow-2xl hover:border-cyan-300'>
                             <p>Create a video application (in 60<br/> seconds or less) and post it to your social<br/> media page (Instagram, Facebook,<br/>LinkedIn, TikTok) using the<br/>hashtags #Switchupyourlifestyle and<br/>#NaijasHottestJob.<br/><br/>

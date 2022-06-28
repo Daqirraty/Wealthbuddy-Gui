@@ -105,13 +105,13 @@ const ambassadors= () =>{
                 {
                     AmbassadorCards.map((AmbassadorCard) =>
                 
-                <div key={AmbassadorCard.id} className='flex flex w-[420.6px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300'>
+                <div key={AmbassadorCard.id} className='flex justify-between w-[420.6px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300'>
                     <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture}/>
-                    <div className='flex flex-col pt-5 '>
-                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                    <div className="flex flex-col pt-5 w-[10rem]">
+                        <h2 className="text-xl font-medium">{AmbassadorCard.name}</h2>
                         <span>{AmbassadorCard.handle}</span>
                     </div>
-                    <div className=' flex ml-[3rem] Content-end justify-end'>
+                    <div className="flex ml-[3rem]">
                         <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                     </div>
                 </div> 

@@ -24,7 +24,7 @@ const TnC =() =>{
                 </div>
                 <div className=" w-[66rem] ml-[4.5rem] ">
                     <p className="mb-4">The following conditions must be satisfied and agreed to for your application to be accepted.</p>
-                    <ul class="list-disc ml-[3rem]">
+                    <ul className="list-disc ml-[3rem]">
                         <li><p>You must be 18 years of age or over as of 1st of May 2022</p></li>
                         <li><p>You must be of good moral character and not be under the influence of any medication, drugs, or other substance which may impair your ability to undertake your employment responsibilities. By applying for this position, you authorize Meristem Securities Limited to conduct civil, criminal, financial, driver history, and other background checks deemed necessary by Meristem Securities Limited.</p></li>
                         <li><p>You must be willing to be employed by Meristem Securities Limited or its nominee, for a period of six months pursuant to an employment agreement and otherwise act in accordance with the reasonable directions of Meristem Securities Limited during the employment period.</p></li>
@@ -69,7 +69,7 @@ const TnC =() =>{
                 </div>
                 <div className="w-[66rem] ml-[4.5rem]">
                     <p className="mb-4">The successful applicant will be required to enter into an employment agreement incorporating the following conditions. All applicants must confirm their acceptance of these conditions.</p>
-                    <ul class="list-disc ml-[3rem]">
+                    <ul className="list-disc ml-[3rem]">
                         <li><p>You must be available for a three-month employment period.</p></li>
                         <li><p>Employment responsibilities will include the following:</p></li>
                         <p>a. Providing weekly updates via social media/blog.</p>

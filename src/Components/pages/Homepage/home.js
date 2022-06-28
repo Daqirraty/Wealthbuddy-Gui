@@ -23,228 +23,245 @@ import { Link } from 'react-router-dom';
 
 
 
-const Homepage = () =>{
-    
-    const AmbassadorCards =[
+const Homepage = () => {
+
+    const AmbassadorCards = [
         {
-            id:1,
+            id: 1,
             name: "Olusegun Kajola",
             handle: "@se-Kajo",
             picture: OluwasegunKajola
         },
 
         {
-            id:2,
+            id: 2,
             name: "Stanley Doe",
             handle: "@stanD",
             picture: StanleyDoe
         },
 
         {
-            id:3,
+            id: 3,
             name: "Tosin Green",
             handle: "@tgreen",
             picture: TosinGreen
         },
 
         {
-            id:4,
+            id: 4,
             name: "Nelson Adewale",
             handle: "@3el-wale",
             picture: NelsonAdewale
         },
 
         {
-            id:5,
+            id: 5,
             name: "Olamide Okesh",
             handle: "@okesh",
             picture: Olamideokesh
         },
         {
-            id:6,
+            id: 6,
             name: "Nneka Ojomo",
             handle: "@njomo",
             picture: NnekaOjomo
         },
         {
-            id:7,
+            id: 7,
             name: "Steve Johnson",
             handle: "@steveJ",
             picture: SteveJohnson
         },
         {
-            id:8,
+            id: 8,
             name: "Bimbo Yinus",
             handle: "@yinbim",
             picture: BimboYinus
         },
         {
-            id:9,
+            id: 9,
             name: "Seun Babs",
             handle: "@sbee",
             picture: SeunBabs
         },
         {
-            id:10,
+            id: 10,
             name: "Johnson Nnaji",
             handle: "@sonji",
             picture: JohnsonNnaji
         }
     ]
 
-    return(
-    <Container>
-        <div className="flex flex-wrap p-[3rem]">
-            <div><h1 className=" px-8" style={{fontFamily: "Montserrat", fontWeight:"900px", fontStyle:"normal", fontSize: "200px",lineHeight: "145px"}}>Be the<br/>next</h1>
-            <div><h6 className="font-Montserrat font-bold ml-10">Naija's hottest<br/>job with N1m<br/>monthly salary.</h6></div><br/><br/><br/>
-            </div><br/>
-            <div><img src={Vector} className="w-[470px] h-[393.72px] pt-[5rem] pr-[9rem]" alt="Vector"/></div> 
-        </div>
-        <div><img src={bgshadow} className="w-[670px] -mt-[18rem]" alt="bgshadow"/></div>
-        <div className=""><img src={peopleofwb2}className="-mt-[769px] ml-[180px] w-[990px] h-[848px] mx-auto" alt="peopleofwb2"/></div>
-        <div className=""><img src={Wealthbuddy2} className="w-[650.09px] -mt-[22rem] h-[150.97px] mr-[250px] mx-auto p-10 bg-white" alt='Wealthbuddy2'/></div>
-        <img src={Ambassador} className="mx-auto w-[850.09px] -mt-[2rem]" alt="Ambassador"/>
-        <div className="mt-[5rem] container mx-auto ml-[33rem]">
-            <Link to={`/Applynow`}>
-                <button className="flex bg-[#99BF18] w-[230px]  h-[57px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center">
-                    <p className='mr-2 text-xl'>APPLY NOW</p>&nbsp;&nbsp;
-                    <img src={Ellipsearrow} className="w-[30px] justify-end" alt="Ellipsearrow"/>
-                </button>
-            </Link>
-        </div>
-        <img src={halfVector} className="w-[70px] -mt-[18rem]" alt="halfVector"/>
-        
-        
-        <div className="flex flex-wrap mb-[2rem] mt-[10rem] pt-[3rem]">
-            <div className="container mx-auto px-[8rem]">
-                <img src={TheJob} className="w-[47rem]" alt="TheJob"/>
+    return (
+        <Container>
+            <div className="flex p-[3rem]">
+                <div className="w-[38rem]"><h1 className="px-8 sm:w-full" style={{ fontFamily: "Montserrat", fontWeight: "900px", fontStyle: "normal", fontSize: "200px", lineHeight: "145px" }}>Be the next</h1>
+                    <div><h6 className="font-bold ml-10">Naija's hottest<br />job with N1m<br />monthly salary.</h6></div><br /><br /><br />
+                </div><br />
+                <div><img src={Vector} className="w-[470px] h-[393.72px] pt-[5rem] pr-[9rem]" alt="Vector" /></div>
             </div>
-            <div className="w-1/2"><img src={Rectangle57} className="m-[7rem] w-[34rem] h-[40rem] drop-shadow-2xl  -mt-9  rounded-[3.3rem] bg-slate-200 hover:border-2 border-cyan-300" alt="Rectangle57"/></div>
-            <div className="w-1/2 px-[4rem]  ">
-              <p className="pt-5"style={{fontFamily: "Montserrat", fontWeight:"200px", fontStyle:"normal", fontSize: "40px",lineHeight:""}}>
-                <b>About the job...</b></p><br/>
-              <p style={{fontFamily: "Montserrat", fontWeight:"600px", fontStyle:"normal", fontSize: "22.97px",lineHeight: "41.2px"}}>As the Wealthbuddy lifestyle ambassador.<br/>
-                  your main responsibility will be to use your<br/>
-                  unique skills, abilities, or talents to help<br/>
-                  people make better decisions with their<br/>money and switch up their lifestyles.</p><br/>
-              <p style={{fontFamily: "Montserrat", fontWeight:"600px", fontStyle:"normal", fontSize: "22.97px",lineHeight: "41.2px"}}>
-                  Salary: N1m monthly (3 months contract)<br/>
-                  Experience: None required<br/>
-                  Age: Just be above 18.</p><br/>
+            <div><img src={bgshadow} className="w-[670px] -mt-[18rem]" alt="bgshadow" /></div>
+            <div className=""><img src={peopleofwb2} className="-mt-[769px] ml-[180px] w-[1050px] h-[848px] mx-auto" alt="peopleofwb2" /></div>
+            <div className="bg-white ml-[13rem] rounded-full"><img src={Wealthbuddy2} className="w-[675.09px] h-[180px] -mt-[22rem] mx-auto p-10 rounded-[3.5rem]" alt='Wealthbuddy2' /></div>
+            <img src={Ambassador} className="mx-auto w-[900.09px] -mt-[3rem]" alt="Ambassador" />
+            <div className="flex mt-[5rem] justify-center">
                 <Link to={`/Applynow`}>
-                    <button className="flex bg-[#99BF18] w-[240px]  h-[57px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center">
-                        <p className='mr-2 text-xl'>LEARN MORE</p>&nbsp;&nbsp;
-                        <img src={Ellipsearrow} className="w-[30px] justify-end" alt="Ellipsearrow"/>
+                    <button className="flex bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-9 border-2 rounded-[1rem] hover:border-blue-400 items-center">
+                        <p className='mr-2 text-xl'>APPLY NOW</p>
+                        <img src={Ellipsearrow} className="flex w-[30px]" alt="Ellipsearrow" />
                     </button>
                 </Link>
             </div>
-            <img src={Vector} className="pl-[1.7rem] -mt-[15rem] mr-[4rem] pb-[2rem]" alt="Vector"/>
-        </div>
-         
-
-        <div className="flex flex-wrap">
-            <div className="container w-1/2 px-20 sm:mx-auto content-center w-full md:mx-auto content-center">
-                <p style={{fontFamily: "Montserrat", fontWeight:"200px", fontStyle:"normal", fontSize: "40px",lineHeight:""}}>
-                    About Wealthbuddy
-                </p>
-                <br/>
-                <p style={{fontFamily: "Montserrat", fontWeight:"200px", fontStyle:"normal", fontSize: "20.97px",lineHeight:"32.75px"}}>Wealthbuddy by Meristem is a savings and investment<br/>app that helps conveniently save money, grow money,<br/>and pay bills.<br/><br/>
-                    Everybody has a desired lifestyle they’d love to live. At<br/>Wealthbuddy, our goal is to help you grow your money so<br/>you can consistently live the life you’ve always dreamed<br/>of. Wealthbuddy is the app that helps you switch up<br/>your lifestyle.<br/><br/>
-                    The Wealthbuddy app has many savings and investment<br/>
-                    plans to choose from.</p>
-                <br/><br/>
-                <Link to={`/AboutUs`}>
-                    <button className="bg-[#99BF18] w-[224px]  h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center">
-                        <p className='mr-2 text-xl'>READ MORE</p>&nbsp;
-                        <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow"/>
-                    </button>
-                </Link>
-            </div>
-            <div className="w-1/2"><img src={computerImage} className="w-[55rem] h-[630px] border-solid borderRadius-10 " alt="computerImage"/></div>
-        </div>
+            <img src={halfVector} className="w-[70px] -mt-[18rem]" alt="halfVector" />
 
 
-        
-        <div className="relative overflow-x-hidden grid grid w-full">
-            <div className="flex flex animate-marquee whitespace-nowrap">
-                {
-                    AmbassadorCards.map((AmbassadorCard) =>
-                
-                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
-                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture}/>
-                    <div className='flex flex-col pt-5 '>
-                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
-                        <span>{AmbassadorCard.handle}</span>
-                    </div>
-                    <div className='flex ml-[3rem] justify-end'>
-                        <Link to={`/Ambassadors`}>
-                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
-                        </Link>
-                    </div>
-                </div> 
-                )}      
+            <div className="flex flex-wrap mb-[2rem] mt-[7rem] pt-[3rem]">
+                <div className="container mx-auto px-[8rem]">
+                    <img src={TheJob} className="w-[47rem]" alt="TheJob" />
+                </div>
+                <div className="w-1/2"><img src={Rectangle57} className="m-[7rem] w-[34rem] h-[40rem] drop-shadow-2xl  -mt-9  rounded-[3.3rem] bg-slate-200 hover:border-2 border-cyan-300" alt="Rectangle57" /></div>
+                <div className="w-1/2 px-[4rem]  ">
+                    <p className="pt-5" style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "40px", lineHeight: "" }}>
+                        <b>About the job...</b></p><br />
+                    <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>As the Wealthbuddy lifestyle ambassador.<br />
+                        your main responsibility will be to use your<br />
+                        unique skills, abilities, or talents to help<br />
+                        people make better decisions with their<br />money and switch up their lifestyles.</p><br />
+                    <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>
+                        Salary: N1m monthly (3 months contract)<br />
+                        Experience: None required<br />
+                        Age: Just be above 18.</p><br />
+                    <Link to={`/Applynow`}>
+                        <button className="inline-flex items-center bg-[#99BF18] w-[240px]  h-[57px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 ">
+                            <p className='mr-2 text-xl'>LEARN MORE</p>&nbsp;&nbsp;
+                            <img src={Ellipsearrow} className="w-[30px] justify-end" alt="Ellipsearrow" />
+                        </button>
+                    </Link>
+                </div>
+                <img src={Vector} className="pl-[1.7rem] -mt-[15rem] mr-[4rem] pb-[2rem]" alt="Vector" />
             </div>
 
-            <div className="absolute top-0 flex animate-marquee2 whitespace-nowrap">
-                {
-                    AmbassadorCards.map((AmbassadorCard) =>
-                
-                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
-                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture}/>
-                    <div className='flex flex-col pt-5 '>
-                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
-                        <span>{AmbassadorCard.handle}</span>
-                    </div>
-                    <div className='flex ml-[3rem] justify-end'>
-                        <Link to={`/Ambassadors`}>
-                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
-                        </Link>
-                    </div>
-                </div> 
-                )}      
-            </div>
-        </div>
 
-        <div className="relative overflow-x-hidden grid grid w-full">
-            <div className="flex flex animate-marquee3 whitespace-nowrap">
-                {
-                    AmbassadorCards.map((AmbassadorCard) =>
-                
-                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
-                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture}/>
-                    <div className='flex flex-col pt-5 '>
-                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
-                        <span>{AmbassadorCard.handle}</span>
-                    </div>
-                    <div className='flex ml-[3rem] justify-end'>
-                        <Link to={`/Ambassadors`}>
-                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
-                        </Link>
-                    </div>
-                </div> 
-                )}      
+            <div className="flex flex-wrap">
+                <div className="container w-1/2 px-20 content-center">
+                    <p style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "40px", lineHeight: "" }}>
+                        About Wealthbuddy
+                    </p>
+                    <br />
+                    <p style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "20.97px", lineHeight: "32.75px" }}>Wealthbuddy by Meristem is a savings and investment<br />app that helps conveniently save money, grow money,<br />and pay bills.<br /><br />
+                        Everybody has a desired lifestyle they’d love to live. At<br />Wealthbuddy, our goal is to help you grow your money so<br />you can consistently live the life you’ve always dreamed<br />of. Wealthbuddy is the app that helps you switch up<br />your lifestyle.<br /><br />
+                        The Wealthbuddy app has many savings and investment<br />
+                        plans to choose from.</p>
+                    <br /><br />
+                    <Link to={`/AboutUs`}>
+                        <button className="bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center sm:mx-auto">
+                            <p className='mr-2 text-xl'>READ MORE</p>&nbsp;
+                            <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
+                        </button>
+                    </Link>
+                </div>
+                <div className="w-1/2"><img src={computerImage} className="w-[55rem] h-[630px] border-solid borderRadius-10" alt="computerImage" /></div>
             </div>
 
-            <div className="absolute top-0 flex animate-marquee4 whitespace-nowrap">
-                {
-                    AmbassadorCards.map((AmbassadorCard) =>
-                
-                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
-                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture}/>
-                    <div className='flex flex-col pt-5 '>
-                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
-                        <span>{AmbassadorCard.handle}</span>
-                    </div>
-                    <div className='flex ml-[3rem] justify-end'>
-                        <Link to={`/Ambassadors`}>
-                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
-                        </Link>
-                    </div>
-                </div> 
-                )}      
+            {/* BEGIN feature div after the sliding cards */}
+            <div className="flex border justify-around mb-2">
+                <div className="flex items-center mx-5 border">
+                    <p className="text-2xl font-bold">Featured Applicants</p>
+                </div>
+                <div className="flex border">
+                    <Link to={`/Ambassadors`} >
+                        <button className="flex justify-between items-center bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
+                            <div className=""><p className='mr-2 text-xl'>VIEW ALL</p></div>
+                            <div className=""><img src={Ellipsearrow} className=" w-[30px]" alt="Ellipsearrow" /></div>
+                        </button>
+                    </Link>
+                </div>
             </div>
-        </div>
-</Container>   
+            {/* End feature div after the sliding cards */}
+
+
+            <div className="relative overflow-x-hidden grid w-full mb-[5rem]">
+                <div className="">
+                    <div className="flex animate-marquee whitespace-nowrap">
+                        {
+                            AmbassadorCards.map((AmbassadorCard) =>
+
+                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
+                                    <div className='flex flex-col pt-5 '>
+                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                        <span>{AmbassadorCard.handle}</span>
+                                    </div>
+                                    <div className='flex ml-[3rem] justify-end'>
+                                        <Link to={`/Ambassadors`}>
+                                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                    </div>
+
+                    <div className="absolute top-0 flex animate-marquee2 whitespace-nowrap">
+                        {
+                            AmbassadorCards.map((AmbassadorCard) =>
+
+                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
+                                    <div className='flex flex-col pt-5 '>
+                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                        <span>{AmbassadorCard.handle}</span>
+                                    </div>
+                                    <div className='flex ml-[3rem] justify-end'>
+                                        <Link to={`/Ambassadors`}>
+                                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                    </div>
+                </div>
+
+                <div className="relative overflow-x-hidden grid w-full">
+                    <div className="flex animate-marquee3 whitespace-nowrap">
+                        {
+                            AmbassadorCards.map((AmbassadorCard) =>
+
+                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
+                                    <div className='flex flex-col pt-5 '>
+                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                        <span>{AmbassadorCard.handle}</span>
+                                    </div>
+                                    <div className='flex ml-[3rem] justify-end'>
+                                        <Link to={`/Ambassadors`}>
+                                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                    </div>
+
+                    <div className="absolute top-0 flex animate-marquee4 whitespace-nowrap">
+                        {
+                            AmbassadorCards.map((AmbassadorCard) =>
+
+                                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                    <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
+                                    <div className='flex flex-col pt-5 '>
+                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                        <span>{AmbassadorCard.handle}</span>
+                                    </div>
+                                    <div className='flex ml-[3rem] justify-end'>
+                                        <Link to={`/Ambassadors`}>
+                                            <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )}
+                    </div>
+                </div>
+            </div>
+        </Container>
     )
 }
 export default Homepage

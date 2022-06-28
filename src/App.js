@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import Container from './Shared/Container/header'
 import AboutUs from './Components/pages/About/AboutUs'
@@ -9,22 +9,28 @@ import Homepage from './Components/pages/Homepage/home'
 import ApplyNow from './Components/pages/Applynow/applynow';
 import Ambassadors from './Components/pages/Ambassadorpage/Ambassadors';
 import Modal from './ModalpopUP/modal';
+import ApplynowModal from './context/ApplynowModal'
 
 function App() {
+
+  const [showApplynowModal, setshowApplynowModal] = useState(false)
+
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="*" element={<Homepage/>}/>
-        <Route path="/" element={<Homepage/>}/>
-        <Route path="/AboutUs" element={<AboutUs/>}/>
-        <Route path="/ApplyNow" element={<ApplyNow/>}/>
-        <Route path="/FAQspage" element={<FAQspage/>}/>
-        <Route path="/TnC" element={<TnC/>}/>
-        <Route path="/Ambassadors" element={<Ambassadors/>}/>
-        <Route path="/Modal" element={<Modal/>}/>
-      </Routes>
+      <ApplynowModal.Provider value={{ showApplynowModal, setshowApplynowModal }}>
+        <Routes>
+          <Route path="*" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/ApplyNow" element={<ApplyNow />} />
+          <Route path="/FAQspage" element={<FAQspage />} />
+          <Route path="/TnC" element={<TnC />} />
+          <Route path="/Ambassadors" element={<Ambassadors />} />
+          <Route path="/Modal" element={<Modal />} />
+        </Routes>
+      </ApplynowModal.Provider>
     </BrowserRouter>
-        
+
   );
 }
 
