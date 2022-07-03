@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import Container from '../../../Shared/Container/header'
 import Ellipsearrow from '../../../assets/images/Ellipsearrow.png'
 import guyof from '../../../assets/images/guyof.png';
-import Thankyou from '../../../assets/images/Thankyou.png';
+// import Thankyou from '../../../assets/images/Thankyou.png';
 import ladythumb from '../../../assets/images/ladythumb.png'
 import halfVector from '../../../assets/images/halfVector.png'
 import Guyof from '../../../assets/images/guyof.png'
@@ -21,7 +21,8 @@ const ApplyNow = () => {
             <div className='container mx-auto Flex flex ml-[40px] mt-5 '>
                 { showApplynowModal ? <Modal /> : null }
                 <div className='w-1/2 ml-[4rem]'>
-                    <img src={Thankyou} alt="Thankyou" className=' w-[550px] mt-[7rem] ml-7' />
+                    <h1 className="w-[550px] mt-[7rem] ml-7 font-sans-serif font-black mb-[3rem]"style={{ fontFamily: "Montserrat", fontWeight: "900px", fontStyle: "normal", fontSize:"200px", lineHeight:"145px"}} >Thank you..</h1>
+                    {/* <img src={Thankyou} alt="Thankyou" className=' w-[550px] mt-[7rem] ml-7' /> */}
                     <p className='text-2xl ml-9'>for your interest in becoming the<br />Wealthbuddy Lifestyle Ambassador.<br />
                         We can’t wait to receive your<br />application and eventually have you<br />on board!
                     </p>
@@ -42,9 +43,9 @@ const ApplyNow = () => {
                 </p>
             </div>
 
-            <div className="container flex mx-[5rem] mt-[3rem]">
+            <div className="container flex mx-[4rem] mt-[3rem]">
                 <div className="mt-[9rem]">
-                    <form action="/Applynow" id="fill-form" className="w-[32rem]">
+                    <form action="/Applynow" id="fill-form" className="w-[32rem] ml-[3rem]">
                         <div className='container'>
                             <label>First Name</label><br />
                             <input className="w-[500px] h-[42px] p-2 mb-2 text-black  rounded-lg bg-gray-200 hover:border-2 border-blue-400 " placholder="Enter here"></input>
@@ -79,40 +80,48 @@ const ApplyNow = () => {
                             <input className='w-[500px] h-[46px] p-2 mb-2 text-black rounded-lg bg-gray-200 hover:border-2 border-blue-400' placholder="Enter here"></input>
                             <hr className='w-[500px]' />
                         </div>
-                        <div className=''  >
+                        <div className="">
                             <p>Are you aware of any circumstances which might adversely<br />
                                 affect your employment for the period of 3 months in the<br />
                                 position?
                             </p>
-                            <div className="my-3">
-                                <input type="radio" id="radio1" name="position" value="No" className='mb-2 border border-[#99BF18] '></input>
-                                <label htmlFor="radio1" className="ml-1">No</label>
-                                <input type="radio" id="radio2" name="position" value="Yes" className='ml-5 mb-2 border border-[#99BF18]'></input>
-                                <label htmlFor="radio2" className="ml-1">Yes</label>
+                            <div className="flex my-3">
+                                <div className="flex">
+                                    <input type="radio" id="radio1" name="position" value="No" className='mb-2 form-check-input appearance-none rounded-full h-4 w-4 p-1 border-2 border-[#99BF18] checked:bg-[#99BF18] checked:border-[#99BF18] mt-1 align-top float-left mr-2 '></input>
+                                    <label htmlFor="radio1" className="ml-1">No</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio2" name="position" value="Yes" className='ml-5 mb-2 form-check-input appearance-none rounded-full h-4 w-4 p-1 border-2 border-[#99BF18] checked:bg-[#99BF18] checked:border-[#99BF18] mt-1 align-top float-left mr-2 '></input>
+                                    <label htmlFor="radio2" className="ml-1">Yes</label>
+                                </div>
                             </div>
 
                             <p>Do you have a criminal record?</p>
-                            <div className="my-3">
-                                <input type="radio" id="radio3" name="criminalrecord" value="No" className='mb-2 border border-[#99BF18] '></input>
-                                <label htmlFor="radio3" className="ml-1">No</label>
-                                <input type="radio" id="radio4" name="criminalrecord" value="Yes" className='ml-5 mb-2 border border-[#99BF18]'></input>
-                                <label htmlFor="radio4" className="ml-1">Yes</label>
+                            <div className="flex my-3">
+                                <div className="flex">
+                                    <input type="radio" id="radio3" name="criminalrecord" value="No" className="form-check-input appearance-none rounded-full h-4 w-4 border-2 border-[#99BF18] checked:bg-[#99BF18] checked:border-[#99BF18] mt-1 float-left mr-2"></input>
+                                    <label htmlFor="radio3" className="ml-1">No</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="radio4" name="criminalrecord" value="Yes" className="ml-5 mb-2 form-check-input appearance-none rounded-full h-4 w-4 p-1 border-2 border-[#99BF18] checked:bg-[#99BF18] checked:border-[#99BF18] mt-1 float-left mr-2"></input>
+                                    <label htmlFor="radio4" className="ml-1">Yes</label>
+                                </div>
                             </div>
                             <div className='mb-[2rem] '>
-                                <input type="radio" id="radio5" name="termsandcond" className='bg-[#99BF18]'></input>&nbsp;&nbsp;
+                                <input type="radio" id="radio5" name="termsandcond" className="form-check-input appearance-none rounded-full h-4 w-4 p-1 border-2 border-[#99BF18] bg-white checked:bg-[#99BF18] checked:border-[#99BF18] mt-1 align-top mr-2"></input>&nbsp;&nbsp;
                                 <label htmlFor="radio5">I agree to the terms & conditions of this application</label>
                             </div>
 
-                            <button type="button" onClick={() => setshowApplynowModal(true)} className="flex items-center bg-[#99BF18] w-[180px]  h-[54px] mb-[4rem] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
-                                <p className='mr-2 text-xl'>SUBMIT</p>&nbsp;
-                                <img src={Ellipsearrow} className="w-[30px] content-end" alt="Ellipsearrow" />
+                            <button type="button" onClick={() => setshowApplynowModal(true)} className="flex justify-between items-center bg-[#99BF18] w-[180px]  h-[54px] mb-[4rem] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
+                                <p className='mr-2 text-xl'>SUBMIT</p>
+                                <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
                             </button>
                         </div>
                     </form>
                 </div>
                 <div className="ml-[5rem]">
                     <div className="mr-2 mx-4 w-[600px] h-[950px]" >
-                        <img src={Guyof} alt="guyof" className="w-[450px]  mb-[7rem]" />
+                        <img src={Guyof} alt="guyof" className="w-[450px] ml-[3rem] mb-[7rem]" />
                     </div>
                 </div>
 

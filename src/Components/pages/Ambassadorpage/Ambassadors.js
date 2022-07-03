@@ -84,11 +84,11 @@ const ambassadors= () =>{
     return(
         <Container>
             <img src={bgshadow} className="w-[40%] pr-[10rem] " alt='bgshadow'/>
-            <div className='mb-[5rem]'>
+            <div className="mb-[5rem]">
                 <img src={Maskgroup} className="w-[1000px] -mt-[20rem] ml-[11rem] rounded-[1.5rem]" alt='Maskgroup'/>
             </div>
 
-            <div className='container mx-auto w-[1000px] m-[2rem] m-[5rem]'>
+            <div className='container mx-auto w-[1000px] m-[5rem]'>
                 <h1 className='mb-5 border-indigo-500'>*Click <b>VIEW</b> to watch uploaded video by choice person</h1>
                 <div className='border rounded-lg flex flex-rows w-[1000px] h-[58px] mb-5'>
                     <input type="text" className='w-[850px] h-[40px] p-2 mb-4 text-black m-2 rounded-lg bg-gray-200 hover:border-2 border-blue-300' placeholder="Enter Name or handle"></input>

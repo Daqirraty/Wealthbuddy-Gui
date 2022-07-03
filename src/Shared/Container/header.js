@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import Ambassadors from '../../Components/pages/Ambassadorpage/Ambassadors';
 import wealth2 from '../../assets/images/wealth2.png';
 import facebook from '../../assets/images/facebook.png';
 import twitter from '../../assets/images/twitter.png';
@@ -13,11 +12,11 @@ const Container = ({children}) => {
   return(
     <div >
       {/* Start of navbar */}
-        <nav className="bg-white border-gray-200 mt-3 px-2 py-10 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <nav className="bg-white border-gray-200 mt-3 px-2  sm:px-4 py-2.5 ">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" className="flex items-center">
                 <img src={wealth2} className="mr-3 h-6 sm:h-9" alt="wealthbuddy"/>
-                <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">wealthbuddy</span>
+                <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-black">wealthbuddy</span>
                 </a>
 
                 {/* START RESPONSIVENESS TOGGLE  */}
@@ -31,12 +30,10 @@ const Container = ({children}) => {
                 <div className="hidden mr-[4rem] w-full md:block md:w-auto" id="mobile-menu">
                   <ul className="flex flex-col  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li className='pt-2'>
-                      {/* <a href="/" className="block pr-4 pl-3 text-black hover:border-b-2 border-[#99BF18] md:bg-transparent md:hover:text-[#99BF18] md:p-0 dark:text-white" aria-current="page">HOME</a> */}
-                      <Link to={`/`} className="block pr-4 pl-3 text-black hover:border-b-2 border-[#99BF18] md:bg-transparent md:hover:text-[#99BF18] md:p-0 dark:text-white" aria-current="page">HOME</Link>
+                      <Link to={`/`} className="block pr-4 pl-3 hover:border-b-2 border-[#99BF18] md:bg-transparent md:hover:text-[#99BF18] md:p-0 text-black" aria-current="page">HOME</Link>
                     </li>
                       <li className='pt-2'>
-                      {/* <a href="Ambassadors" className="block py-2 pr-4 pl-3  hover:border-b-2 border-[#99BF18]  md:hover:bg-transparent md:border-0 md:hover:text-[#99BF18] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">VOTE</a> */}
-                      <Link to={`/Ambassadors`} className="block py-2 pr-4 pl-3  hover:border-b-2 border-[#99BF18]  md:hover:bg-transparent md:border-0 md:hover:text-[#99BF18] md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">VOTE</Link>
+                      <Link to={`/Ambassadors`} className="block pr-4 pl-3 hover:border-b-2 border-[#99BF18] md:bg-transparent md:hover:text-[#99BF18] md:p-0 text-black" aria-current="page">VOTE</Link>
                     </li>
                     <li>
                       <Link to={`/`}>
@@ -55,8 +52,8 @@ const Container = ({children}) => {
 
 
         {/* BEGIN FOOTER */}
-        <footer className="flex bg-[#99BF18] md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
-            <span className="text-sm text-white sm:text-center dark:text-gray-400">Copyright &copy; Wealthbuddy by Meristem | Privacy Policy</span>
+        <footer className="flex bg-[#99BF18] md:flex md:items-center md:justify-between md:p-6 ">
+            <span className="text-sm text-white sm:text-center">Copyright &copy; Wealthbuddy by Meristem | Privacy Policy</span>
             <ul className="flex items-center md:none mt-3 text-sm sm:mt-0">
                 <li className='flex'><a href="#" className="mr-4 md:mr-6 "><img src={facebook}/></a></li>
                 {/* <li className='flex'><Link to={``} className="mr-4 md:mr-6 "><img src={facebook}/></Link></li> */}

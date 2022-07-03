@@ -10,6 +10,7 @@ import ApplyNow from './Components/pages/Applynow/applynow';
 import Ambassadors from './Components/pages/Ambassadorpage/Ambassadors';
 import Modal from './ModalpopUP/modal';
 import ApplynowModal from './context/ApplynowModal'
+import AmbassadorModal from './ModalpopUP/AmbassadorModal'
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
           <Route path="/TnC" element={<TnC />} />
           <Route path="/Ambassadors" element={<Ambassadors />} />
           <Route path="/Modal" element={<Modal />} />
+          <Route path="/AmbassadorModal" element={<AmbassadorModal/>} />
         </Routes>
       </ApplynowModal.Provider>
     </BrowserRouter>

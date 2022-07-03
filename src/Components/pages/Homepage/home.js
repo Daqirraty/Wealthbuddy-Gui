@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Container from '../../../Shared/Container/header'
 import bgshadow from '../../../assets/images/bgshadow.png'
 import Rectangle57 from '../../../assets/images/Rectangle57.png';
@@ -19,7 +20,6 @@ import OluwasegunKajola from '../../../assets/images/OluwasegunKajola.png'
 import Olamideokesh from '../../../assets/images/Olamideokesh.png'
 import SteveJohnson from '../../../assets/images/SteveJohnson.png'
 import StanleyDoe from '../../../assets/images/StanleyDoe.png'
-import { Link } from 'react-router-dom';
 
 
 
@@ -95,7 +95,8 @@ const Homepage = () => {
     return (
         <Container>
             <div className="flex p-[3rem]">
-                <div className="w-[38rem]"><h1 className="px-8 sm:w-full" style={{ fontFamily: "Montserrat", fontWeight: "900px", fontStyle: "normal", fontSize: "200px", lineHeight: "145px" }}>Be the next</h1>
+                <div className="w-[38rem]" >
+                    <h1 className="px-8"style={{ fontFamily: "Montserrat", fontWeight: "900px", fontStyle: "normal", fontSize:"200px", lineHeight:"145px"}} >Be the next</h1>
                     <div><h6 className="font-bold ml-10">Naija's hottest<br />job with N1m<br />monthly salary.</h6></div><br /><br /><br />
                 </div><br />
                 <div><img src={Vector} className="w-[470px] h-[393.72px] pt-[5rem] pr-[9rem]" alt="Vector" /></div>
@@ -106,7 +107,7 @@ const Homepage = () => {
             <img src={Ambassador} className="mx-auto w-[900.09px] -mt-[3rem]" alt="Ambassador" />
             <div className="flex mt-[5rem] justify-center">
                 <Link to={`/Applynow`}>
-                    <button className="flex bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-9 border-2 rounded-[1rem] hover:border-blue-400 items-center">
+                    <button className="flex justify-between bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-9 border-2 rounded-[1rem] hover:border-blue-400 items-center">
                         <p className='mr-2 text-xl'>APPLY NOW</p>
                         <img src={Ellipsearrow} className="flex w-[30px]" alt="Ellipsearrow" />
                     </button>
@@ -115,28 +116,30 @@ const Homepage = () => {
             <img src={halfVector} className="w-[70px] -mt-[18rem]" alt="halfVector" />
 
 
-            <div className="flex flex-wrap mb-[2rem] mt-[7rem] pt-[3rem]">
+            <div className="flex flex-wrap mb-[2rem] mt-[7rem] pt-[3rem] ">
                 <div className="container mx-auto px-[8rem]">
                     <img src={TheJob} className="w-[47rem]" alt="TheJob" />
                 </div>
-                <div className="w-1/2"><img src={Rectangle57} className="m-[7rem] w-[34rem] h-[40rem] drop-shadow-2xl  -mt-9  rounded-[3.3rem] bg-slate-200 hover:border-2 border-cyan-300" alt="Rectangle57" /></div>
-                <div className="w-1/2 px-[4rem]  ">
-                    <p className="pt-5" style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "40px", lineHeight: "" }}>
-                        <b>About the job...</b></p><br />
-                    <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>As the Wealthbuddy lifestyle ambassador.<br />
-                        your main responsibility will be to use your<br />
-                        unique skills, abilities, or talents to help<br />
-                        people make better decisions with their<br />money and switch up their lifestyles.</p><br />
-                    <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>
-                        Salary: N1m monthly (3 months contract)<br />
-                        Experience: None required<br />
-                        Age: Just be above 18.</p><br />
-                    <Link to={`/Applynow`}>
-                        <button className="inline-flex items-center bg-[#99BF18] w-[240px]  h-[57px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 ">
-                            <p className='mr-2 text-xl'>LEARN MORE</p>&nbsp;&nbsp;
-                            <img src={Ellipsearrow} className="w-[30px] justify-end" alt="Ellipsearrow" />
-                        </button>
-                    </Link>
+                <div className="flex">
+                    <div className="w-1/2"><img src={Rectangle57} className="m-[7rem] w-[34rem] h-[40rem] drop-shadow-2xl  -mt-9  rounded-[3.3rem] bg-slate-200 hover:border-2 border-cyan-300" alt="Rectangle57" /></div>
+                    <div className="container w-1/2 px-[4rem] ">
+                        <p className="pt-5" style={{ fontFamily: "Montserrat", fontWeight: "200px", fontStyle: "normal", fontSize: "40px", lineHeight: "" }}>
+                            <b>About the job...</b></p><br />
+                        <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>As the Wealthbuddy lifestyle ambassador.<br />
+                            your main responsibility will be to use your<br />
+                            unique skills, abilities, or talents to help<br />
+                            people make better decisions with their<br />money and switch up their lifestyles.</p><br />
+                        <p style={{ fontFamily: "Montserrat", fontWeight: "600px", fontStyle: "normal", fontSize: "22.97px", lineHeight: "41.2px" }}>
+                            Salary: N1m monthly (3 months contract)<br />
+                            Experience: None required<br />
+                            Age: Just be above 18.</p><br />
+                        <Link to={`/Applynow`}>
+                            <button className="inline-flex justify-between items-center bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 ">
+                                <p className='mr-2 text-xl'>LEARN MORE</p>
+                                <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
+                            </button>
+                        </Link>
+                    </div>
                 </div>
                 <img src={Vector} className="pl-[1.7rem] -mt-[15rem] mr-[4rem] pb-[2rem]" alt="Vector" />
             </div>
@@ -153,12 +156,14 @@ const Homepage = () => {
                         The Wealthbuddy app has many savings and investment<br />
                         plans to choose from.</p>
                     <br /><br />
-                    <Link to={`/AboutUs`}>
-                        <button className="bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400 inline-flex items-center sm:mx-auto">
-                            <p className='mr-2 text-xl'>READ MORE</p>&nbsp;
-                            <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
-                        </button>
-                    </Link>
+                    <div className="flex justify-between">
+                        <Link to={`/AboutUs`}>
+                            <button className="flex justify-between items-center sm:mx-auto bg-[#99BF18] w-[224px] h-[54px] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
+                                <p className='mr-2 text-xl'>READ MORE</p>
+                                <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
+                            </button>
+                        </Link>
+                    </div>
                 </div>
                 <div className="w-1/2"><img src={computerImage} className="w-[55rem] h-[630px] border-solid borderRadius-10" alt="computerImage" /></div>
             </div>
@@ -188,13 +193,13 @@ const Homepage = () => {
                         {
                             AmbassadorCards.map((AmbassadorCard) =>
 
-                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                <div key={AmbassadorCard.id} className='flex justify-between w-[420.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
                                     <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
-                                    <div className='flex flex-col pt-5 '>
-                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                    <div className='flex flex-col w-[10rem] pt-5 '>
+                                        <h2 className='text-xl font-medium'>{AmbassadorCard.name}</h2>
                                         <span>{AmbassadorCard.handle}</span>
                                     </div>
-                                    <div className='flex ml-[3rem] justify-end'>
+                                    <div className='flex ml-[3rem]'>
                                         <Link to={`/Ambassadors`}>
                                             <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                                         </Link>
@@ -207,13 +212,13 @@ const Homepage = () => {
                         {
                             AmbassadorCards.map((AmbassadorCard) =>
 
-                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                <div key={AmbassadorCard.id} className='flex justify-between w-[420.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
                                     <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
-                                    <div className='flex flex-col pt-5 '>
-                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                    <div className='flex flex-col w-[10rem] pt-5 '>
+                                        <h2 className='text-xl font-medium'>{AmbassadorCard.name}</h2>
                                         <span>{AmbassadorCard.handle}</span>
                                     </div>
-                                    <div className='flex ml-[3rem] justify-end'>
+                                    <div className='flex ml-[3rem]'>
                                         <Link to={`/Ambassadors`}>
                                             <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                                         </Link>
@@ -228,13 +233,13 @@ const Homepage = () => {
                         {
                             AmbassadorCards.map((AmbassadorCard) =>
 
-                                <div key={AmbassadorCard.id} className='flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                <div key={AmbassadorCard.id} className='flex justify-between w-[420.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
                                     <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
-                                    <div className='flex flex-col pt-5 '>
-                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                    <div className='flex flex-col w-[10rem] pt-5 '>
+                                        <h2 className='text-xl font-medium'>{AmbassadorCard.name}</h2>
                                         <span>{AmbassadorCard.handle}</span>
                                     </div>
-                                    <div className='flex ml-[3rem] justify-end'>
+                                    <div className='flex ml-[3rem]'>
                                         <Link to={`/Ambassadors`}>
                                             <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                                         </Link>
@@ -247,13 +252,13 @@ const Homepage = () => {
                         {
                             AmbassadorCards.map((AmbassadorCard) =>
 
-                                <div key={AmbassadorCard.id} className='flex flex w-[424.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
+                                <div key={AmbassadorCard.id} className='flex justify-between w-[420.06px] h-[110.6px] m-5 ml-[5rem] border-2 rounded-[1.5rem] shadow-xl hover:border-blue-300' >
                                     <img src={AmbassadorCard.picture} className="m-2 w-[80px] rounded-full" alt={AmbassadorCard.picture} />
-                                    <div className='flex flex-col pt-5 '>
-                                        <h2 className='text-xl w-full font-medium'>{AmbassadorCard.name}</h2>
+                                    <div className='flex flex-col w-[10rem] pt-5 '>
+                                        <h2 className='text-xl font-medium'>{AmbassadorCard.name}</h2>
                                         <span>{AmbassadorCard.handle}</span>
                                     </div>
-                                    <div className='flex ml-[3rem] justify-end'>
+                                    <div className='flex ml-[3rem]'>
                                         <Link to={`/Ambassadors`}>
                                             <button className="bg-[#99BF18] w-[90px] h-[46px] text-white font-bold py-2 m-[10px] px-6 mt-7 border-2 rounded-lg hover:border-blue-400 inline-flex items-center justify-end ">View</button>
                                         </Link>
