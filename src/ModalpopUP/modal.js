@@ -1,13 +1,14 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { useContext, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useContext } from 'react';
 import correct from '../assets/images/correct.png'
 import Backarrow from '../assets/images/Backarrow.png'
-import ApplynowModal from '../context/ApplynowModal'
+import ContextModal from '../context/ContextModals';
 
-const Modal = () => {
+const ApplyModal = () => {
+
     let navigate = useNavigate();
 
-    const {setshowApplynowModal} = useContext(ApplynowModal)
+    const {setshowApplynowModal} = useContext(ContextModal)
 
     const Close = () => {
         setshowApplynowModal(false)
@@ -31,10 +32,10 @@ const Modal = () => {
                                             <p className="flex justify-center m-5 text-sm text-center text-black-500">We will keep you posted via your email address so you can track the progress of your delivery.</p>
                                         </div>
                                         <div className="bg-white mx-auto justify-center px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                                                <button type="button" onClick={Close} className="bg-[#99BF18] w-[224px] h-[54px] mt-3 inline-flex justify-center sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm text-white font-medium py-2 mb-2 px-6 border rounded-lg hover:border-blue-400 items-center">
-                                                    <p className='mr-2 text-xl'>BACK HOME</p>&nbsp;
-                                                    <img src={Backarrow} className="w-[30px]" alt="Backarrow" />
-                                                </button>
+                                            <button type="button" onClick={Close} className="bg-[#99BF18] w-[224px] h-[54px] mt-3 inline-flex justify-center sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm text-white font-medium py-2 mb-2 px-6 border rounded-lg hover:border-blue-400 items-center">
+                                                <p className='mr-2 text-xl'>BACK HOME</p>&nbsp;
+                                                <img src={Backarrow} className="w-[30px]" alt="Backarrow" />
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -47,4 +48,4 @@ const Modal = () => {
         </div>
     )
 }
-export default Modal
+export default ApplyModal

@@ -9,16 +9,17 @@ import Homepage from './Components/pages/Homepage/home'
 import ApplyNow from './Components/pages/Applynow/applynow';
 import Ambassadors from './Components/pages/Ambassadorpage/Ambassadors';
 import Modal from './ModalpopUP/modal';
-import ApplynowModal from './context/ApplynowModal'
-import AmbassadorModal from './ModalpopUP/AmbassadorModal'
+import ContextModal from './context/ContextModals';
+import AmbassadorModal from './ModalpopUP/AmbassadorModal';
 
 function App() {
 
   const [showApplynowModal, setshowApplynowModal] = useState(false)
+  const [showContextAmbassadorModal, setshowContextAmbassadorModal] = useState(false)
 
   return (
     <BrowserRouter>
-      <ApplynowModal.Provider value={{ showApplynowModal, setshowApplynowModal }}>
+      <ContextModal.Provider value={{ showApplynowModal, setshowApplynowModal, showContextAmbassadorModal, setshowContextAmbassadorModal }}>
         <Routes>
           <Route path="*" element={<Homepage />} />
           <Route path="/" element={<Homepage />} />
@@ -28,9 +29,9 @@ function App() {
           <Route path="/TnC" element={<TnC />} />
           <Route path="/Ambassadors" element={<Ambassadors />} />
           <Route path="/Modal" element={<Modal />} />
-          <Route path="/AmbassadorModal" element={<AmbassadorModal/>} />
+          <Route path="/AmbassadorModal" element={<AmbassadorModal />} />
         </Routes>
-      </ApplynowModal.Provider>
+      </ContextModal.Provider>
     </BrowserRouter>
 
   );

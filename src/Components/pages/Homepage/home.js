@@ -107,7 +107,7 @@ const Homepage = () => {
             <img src={Ambassador} className="mx-auto w-[900.09px] -mt-[3rem]" alt="Ambassador" />
             <div className="flex mt-[5rem] justify-center">
                 <Link to={`/Applynow`}>
-                    <button className="flex justify-between bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-9 border-2 rounded-[1rem] hover:border-blue-400 items-center">
+                    <button className="flex justify-between bg-[#99BF18] w-[240px] h-[57px] text-white font-bold py-2 mb-2 px-9 border-2 rounded-lg hover:border-blue-400 items-center">
                         <p className='mr-2 text-xl'>APPLY NOW</p>
                         <img src={Ellipsearrow} className="flex w-[30px]" alt="Ellipsearrow" />
                     </button>

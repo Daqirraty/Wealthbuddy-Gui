@@ -2,19 +2,17 @@ import { useContext } from 'react';
 import Container from '../../../Shared/Container/header'
 import Ellipsearrow from '../../../assets/images/Ellipsearrow.png'
 import guyof from '../../../assets/images/guyof.png';
-// import Thankyou from '../../../assets/images/Thankyou.png';
 import ladythumb from '../../../assets/images/ladythumb.png'
 import halfVector from '../../../assets/images/halfVector.png'
 import Guyof from '../../../assets/images/guyof.png'
 import Modal from '../../../ModalpopUP/modal';
-import ApplynowModal from '../../../context/ApplynowModal';
-
+import ContextModal from '../../../context/ContextModals';
 
 
 
 const ApplyNow = () => {
 
-    const { showApplynowModal, setshowApplynowModal } = useContext(ApplynowModal)
+    const { showApplynowModal, setshowApplynowModal } = useContext(ContextModal)
 
     return (
         <Container>
@@ -112,7 +110,7 @@ const ApplyNow = () => {
                                 <label htmlFor="radio5">I agree to the terms & conditions of this application</label>
                             </div>
 
-                            <button type="button" onClick={() => setshowApplynowModal(true)} className="flex justify-between items-center bg-[#99BF18] w-[180px]  h-[54px] mb-[4rem] text-white font-bold py-2 mb-2 px-6 border-2 rounded-lg hover:border-blue-400">
+                            <button type="button" onClick={() => setshowApplynowModal(true)} className="flex justify-between items-center bg-[#99BF18] w-[180px]  h-[54px] mb-[4rem] text-white font-bold py-2 px-6 border-2 rounded-lg hover:border-blue-400">
                                 <p className='mr-2 text-xl'>SUBMIT</p>
                                 <img src={Ellipsearrow} className="w-[30px]" alt="Ellipsearrow" />
                             </button>
